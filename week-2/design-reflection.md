@@ -1,6 +1,6 @@
 
 <html>
-	<img src="site-map.png">
+	<img src="imgs/site-map.png">
 
 What are the 6 Phases of Web Design?
 The 6 Phases of Web Design are:
