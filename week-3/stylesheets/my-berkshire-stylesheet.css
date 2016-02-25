@@ -61,3 +61,27 @@ li span {
 #small-text {
   font-size: .5em;
 }
+
+
+/* 
+
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+I had a hard time linking lol.  Definitely make sure you link properly!  But also, set your link up correctly.
+Should essentially look like <link type="#" rel="#" href="#">
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+It took us some time to get it all adjusted correctly.  Especially because I had already styled mine using tables, so we had to delete them to move with CSS.
+We used id's and classes.  By doing so we were able to position things easier!
+
+What CSS did you use to modify the element style (like size, color, etc.)
+We used font-size, text-align: , color, etc
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+We did!  Its how we moved things around.  And althouh I know that class is for groups and ids are for individual tags, I can't seem to be able to visually see the difference between the two while coding.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+Ours looked cleaner because it was split into both an HTML file as well as a css file.  However I do feel like some of the HTML elements made more sense and were easier than making changes via css.  Overall do prefer CSS.
+
+
+
+*/
