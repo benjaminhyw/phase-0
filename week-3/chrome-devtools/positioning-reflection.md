@@ -1,6 +1,6 @@
 <html>
 <img src="../../../week-2/imgs/devtools-pair-1.pg">
-<img src="../imgs/devtools-pair-2.png">
+<img src="../../week-2/imgs/devtools-pair-2.png">
 <img src="/../../../week
 -2/imgs/devtools-pair-3.png">
 <img src="imgs/devtools-pair-4.png">
