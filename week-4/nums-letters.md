@@ -20,7 +20,7 @@ puts hours_per_year
 	
 
 def minutes_per_decade
-	60 * hours_per_decade
+	(60 * hours_per_year) * 10
 end
 
 puts minutes_per_decade
