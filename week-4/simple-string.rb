@@ -1,10 +1,13 @@
 # Solution Below
 
 old_string="Ruby is cool"
-new_string=old_string.upcase
-new_string=old_string.reverse
-new_string="LOOC SI YBUR"
+new_string=old_string.upcase.reverse
 
+#new_string=old_string.reverse
+#new_string="LOOC SI YBUR"
+
+#Initially I had those last two ^^ included in there, but going over I see they're not necessary.
+#Leaving them up as reference tho.
 
 # RSpec Tests. They are included in this file because the local variables you are creating are not accessible across files. If we try to run these files as a separate file per normal operation, the local variable checks will return nil.
 
