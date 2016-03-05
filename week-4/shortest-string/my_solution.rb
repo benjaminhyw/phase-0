@@ -13,12 +13,7 @@
 
 
 def shortest_string(list_of_words) 
-list_of_words.sort! { |x,y| x.size <=> y.size }
-return list_of_words[0]
+list_of_words.sort.reverse 
+return list_of_words.first
 end
 
-#define method
-#list_of_words.sort! so sort from shortest to longest {|variable containing two variables| x.size greater than or qual to or less than y.size}
-#^^basically what happens here is you tell your array to compare each element to themselves in terms of .size, then to sort themselves
-#return list_of_words[0] aka the first element in the array.  after sorting, this should be the smallest one
-#end
