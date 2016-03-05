@@ -15,11 +15,11 @@ def largest_integer(list_of_nums)
  if list_of_nums.length==0
  	return nil
 end
-max_num = list_of_nums[0]
+	max_num = list_of_nums[0]
 	list_of_nums.each do |number|
-	if number > max_num
+		if number > max_num
 		max_num=number
+  		end
   	end
-  end
   	max_num
 end
