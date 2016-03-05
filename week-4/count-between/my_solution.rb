@@ -22,7 +22,7 @@ def count_between(list_of_integers, lower_bound, upper_bound)
   # Your code goes here!
 end
 
-#basically write a method where you assign two bounds, and the return is the number of elements within those bounds
+#basically write a method where you have two bounds, and the return is the number of elements in the array within those bounds
 
 #return 0 if the list is empty, is only 0, or if the upper bound is less than the lower bound.
 #create variable for range, which is everything between lower_bound and upper_bound, applied to array
