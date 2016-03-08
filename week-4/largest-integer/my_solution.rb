@@ -23,3 +23,16 @@ end
   	end
   	max_num
 end
+
+
+#This next code was also taken from LisaBee224.  Same as mine, but smaller variables
+
+# def largest_integer(list_of_nums)
+#   big = list_of_nums[0]
+#   list_of_nums.each do |num|
+#     if num > big
+#       big = num
+#     end
+#   end
+#   return big
+# end

@@ -22,6 +22,20 @@ def count_between(list_of_integers, lower_bound, upper_bound)
   # Your code goes here!
 end
 
+
+
+#This code down below was the used by LisaBee224, one of the anonymous assignments you had to grade
+#
+# def count_between(list_of_integers, lower_bound, upper_bound)
+#   count = 0
+#   list_of_integers.each do |num|
+#   if num <= upper_bound && num >= lower_bound
+#     count = count + 1
+#   end
+# end
+# return count
+# end
+
 #basically write a method where you have two bounds, and the return is the number of elements in the array within those bounds
 
 #return 0 if the list is empty, is only 0, or if the upper bound is less than the lower bound.
