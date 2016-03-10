@@ -90,3 +90,32 @@ def print(groceries)
 end
 
 print(groceries)
+
+
+# What did you learn about pseudocode from working on this challenge?
+# I haven't been doing so before but, it definitely helped me get a better understanding this time around.
+# It felt pretty simple this time, but I figure the more specific you are (while avoiding ruby language), the easier it is to code later.
+
+# What are the tradeoffs of using Arrays and Hashes for this challenge?
+# Well arrays doesn't let us specify a key value, which hash does.  That in itself is super helpful when wanting to create an item with a quantity.
+
+# What does a method return?
+# Methods return the information we ask it to provide.  So, in this case it provided the list of items, quantity, plus updated list after adding and subtracting.
+
+# What kind of things can you pass into methods as arguments
+# Pretty much any object essentially.  Arguments are usually within the () and get called during the method either explicitly or via use of variable
+
+# How can you pass information between methods?
+# By creating new variables for method outputs (..?)
+
+# What concepts were solidified in this challenge, and what concepts are still confusing?
+# We need user input in this type of method via gets.chomp, and we need to assign that input a variablr to store the info for later use.
+# We can transfer info from previous methods through use of variables in further methods.
+# Conceptually... everything makes sense when I read it but when I have to write my own code it's hard for me.. I think partly because
+# I expect myself to know all this information rather than know how to look it up?  I need to be better about looking up how certain concepts work.
+
+
+
+
+
+
