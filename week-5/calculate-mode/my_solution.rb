@@ -50,3 +50,14 @@ end
 
 
 # 4. Reflection
+
+# Which data structure did you and your pair decide to implement and why?
+# Arrays made the most sense because we didn't need any key values, simply the numbers and their frequency.
+# Were you more successful breaking this problem down into implementable pseudocode than the last with a pair?
+# This one actually required more research.  I think I personally need a lot more studying to do, since my pair seemed to understand the concept better.  We both probably should brush up on methods a little
+# What issues/successes did you run into when translating your pseudocode to code?
+# Again same as the last, due to me not being sure of how to really further break this down, this is as far as I was able to comfortably get.  However, I will definitely make an attemot to come back to this.
+# What methods did you use to iterate through the content? Did you find any good ones when you were refactoring? Were they difficult to implement?
+# We chose to use .map and .max, as well as .uniq.  Did so to create new array, choose the element that came up the most, then delete duplicates.
+
+
