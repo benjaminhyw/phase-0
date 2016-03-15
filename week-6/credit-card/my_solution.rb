@@ -62,6 +62,28 @@ p card.check_card
 
 # Refactored Solution
 
+class CreditCard
+  def initialize(credit_card_number)
+        @credit_card_number = credit_card_number.to_s.split('').reverse!
+       raise ArgumentError.new('Not enough digits') if @credit_card_number.size != 16
+   end
+
+  def check_card
+      @credit_card_number.map! do |num|
+          if @credit_card_number.index(num).odd?
+             new_num  = num.to_i * 2
+              if new_num.size > 1
+                  new_num.to_s.split('').map! {|digit| digit.to_i}
+              end
+           else
+                  num.to_i
+          end
+      end
+      @credit_card_number.flatten.inject(:+) % 10 == 0
+     
+ end
+   
+end
 
 
 
@@ -79,7 +101,7 @@ p card.check_card
 # 	on having to convert to_s and to_i here and there, we'd forget to do so.
 
 # What new methods did you find to help you when you refactored?
-
+#We just did a general clean up, no new methods.
 
 # What concepts or learnings were you able to solidify in this challenge?
 # The general look of methods, instance variables, if statements, and ArgumentErrors lol
