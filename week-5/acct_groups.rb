@@ -130,21 +130,21 @@ outside_g_num_var.each.with_index do |group, i|
 end
 
 
-What was the most interesting and most difficult part of this challenge?
-Conceptually this felt pretty straightforward, which is interesting because so far most of ruby has not been (for me, definitely for me)
-But also, I thought It was a cool way to mix in several different elements to show us something we could literally relate to (accountability groups in DBC)
-I had the hardest time printing my group, because my code was always off on little things here and there.  Got it down essentially but couldn't get it to show us groups with people
+# What was the most interesting and most difficult part of this challenge?
+# Conceptually this felt pretty straightforward, which is interesting because so far most of ruby has not been (for me, definitely for me)
+# But also, I thought It was a cool way to mix in several different elements to show us something we could literally relate to (accountability groups in DBC)
+# I had the hardest time printing my group, because my code was always off on little things here and there.  Got it down essentially but couldn't get it to show us groups with people
 
-Do you feel you are improving in your ability to write pseudocode and break the problem down?
-In this one, yes!! This Pseudocode/breakdown was pretty simple which is relieving!!
+# Do you feel you are improving in your ability to write pseudocode and break the problem down?
+# In this one, yes!! This Pseudocode/breakdown was pretty simple which is relieving!!
 
-Was your approach for automating this task a good solution? What could have made it even better?
-Yea I think so?  Basically created new arrays, randomized the list, pushed items into empty arrays and deleted those items as we went for no duplicates
-I feel like if anything.. maybe my weird variable names, otherwise can't think of anything at the moment
+# Was your approach for automating this task a good solution? What could have made it even better?
+# Yea I think so?  Basically created new arrays, randomized the list, pushed items into empty arrays and deleted those items as we went for no duplicates
+# I feel like if anything.. maybe my weird variable names, otherwise can't think of anything at the moment
 
-What data structure did you decide to store the accountability groups in and why?
-I went with arrays because it allowed us to then use the index (which you don't really need until you're giving your group a number)
-But still, there's no need to input a key name with arrays.. and also easier visibility in my opinion when trying to create / push
+# What data structure did you decide to store the accountability groups in and why?
+# I went with arrays because it allowed us to then use the index (which you don't really need until you're giving your group a number)
+# But still, there's no need to input a key name with arrays.. and also easier visibility in my opinion when trying to create / push
 
-What did you learn in the process of refactoring your initial solution? Did you learn any new Ruby methods?
-I'll try to come back and refactor later, wasn't able to see any way to go about it when first coming across the refactor step.
+# What did you learn in the process of refactoring your initial solution? Did you learn any new Ruby methods?
+# I'll try to come back and refactor later, wasn't able to see any way to go about it when first coming across the refactor step.
