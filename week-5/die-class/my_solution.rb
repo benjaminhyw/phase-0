@@ -28,7 +28,7 @@ class Die
   end
 
   def sides
-    @sides = @sides
+    return @sides
   end
 
   def roll
