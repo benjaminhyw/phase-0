@@ -18,7 +18,7 @@ def serving_size_calc(item_to_make, num_of_ingredients)
 
     raise ArgumentError.new("#{item_to_make} is not a valid input") if error_counter > 0 #if none match, output the argumenterror
 
-  serving_size = library.values_at(item_to_make)[0] #matching up item to make with library value 
+  serving_size = library[item_to_make] #matching up item to make with library value 
   remaining_ingredients = num_of_ingredients % serving_size #determine any leftovers
   suggestion = ""
   
