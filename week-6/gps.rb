@@ -45,3 +45,23 @@ p serving_size_calc("cookie", 10)
 p serving_size_calc("THIS IS AN ERROR", 5)
 
 #  Reflection
+
+
+# What did you learn about making code readable by working on this challenge?
+# Shorter code doesn't necesarilly mean better, however there are a lot of different ways to refactor
+# For example raise ArgumentError.  Making things more readable makes it easier to understand from an outsider perspective.
+
+# Did you learn any new methods? What did you learn about them?
+# I did not learn any new methods during this challenge.
+
+# What did you learn about accessing data in hashes? 
+# To access them you have to be sure you are addressing the elements correctly.
+# Good use of specific variables issuper helpful.
+
+# What concepts were solidified when working through this challenge?
+# if statements, raise ArgumentError, defining methods, cases (although this one is still a fairly new concept for me so it was just more practice, which was useful.)
+
+
+
+
+
