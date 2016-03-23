@@ -50,7 +50,10 @@ adam.children = terah.children
 // referencing the original code and going
 // 
 // How difficult was it to add and delete properties outside of the object itself?
+// That wasn't too hard, it felt pretty straightforward.
+
 // What did you learn about manipulating objects in this challenge?
+// In JavaScript you're able to do so after the code, which isn't really the case in Ruby.
 //
 //
 //
