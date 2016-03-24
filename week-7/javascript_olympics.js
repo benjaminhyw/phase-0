@@ -69,3 +69,36 @@ function Athlete(name,age,sport,quote){
 
 
 // Reflection
+// What JavaScript knowledge did you solidify in this challenge?
+// Creating variables/objects.. everything else I wouldn't exatly say I solidified,
+// but more so clarified that I need a better understanding.
+
+// What are constructor functions?
+// A basic constructor function looks like this
+
+// function myObject(){
+ 
+// };
+
+// You use constructor functions when you need to do some initial work before the object is created 
+// or require multiple instances of the object where each instance can be changed during the lifetime of the script.
+
+
+// How are constructors different from Ruby classes (in your research)?
+// I had to look this up because I was unsure, and still unsure.  Found this link
+// https://www.codecademy.com/forum_questions/5259d99780ff336c0e00656d
+// which gave me this
+
+// function Class() {
+//     // constructor code block
+//     // public and private stuff here
+// }
+
+// var myClass = new Class();
+
+// In which the top is a constructor vs the bottom is a class.
+// "We can programmatically create properties on any object we create with the constructor,
+//  some of which can be class-wide, others specific to the instance."
+// Whereas you add .property to Class ..
+
+
