@@ -72,3 +72,26 @@ console.log(separateComma(1532433));
 
 
 // Reflection
+
+What was it like to approach the problem from the perspective of JavaScript? Did you approach the problem differently?
+It's hard!  I feel like I just KINDA wrapped my head around ruby and now i'm trying to understand JS... it's scrambbling my brain a little
+My pair took a stronger initiative because I didn't really know how to go about it and he felt a little more confortable, but i'd say 
+yea we generally approached this a little differently.
+
+What did you learn about iterating over arrays in JavaScript?
+for loops are super useful during these, and we can write them in the ( ; ; )
+  The part before the first semicolon initializes the loop, usually defining the variable.
+  the second parrt is the expression that checks whether the loop must continue.
+  the final part updates the state of the loop fter every iteration.
+
+What was different about solving this problem in JavaScript?
+I feel like this is just because we're still learning about JS but, since there isn't really a clear range function... to create something similar,
+we can opt to something like OR, and that'll be the case for several different methods that we think COULD work like ruby but actually have no JS equivalent :(
+
+What built-in methods did you find to incorporate in your refactored solution?
+Our refactored version just used OR and .length, nothing else.
+
+
+
+
+
