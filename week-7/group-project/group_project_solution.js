@@ -48,42 +48,99 @@ Steps:
 
 */
 
+// //sum
+// function sum(array){
+//   var sum = 0;
+//   for (var counter = 0; counter < array.length; counter ++){
+//     sum += array[counter];
+//   }
+//   return sum;
+// }
+
+// console.log(sum([1,2,3,]))
+
+
+// //Mean
+// function mean(array){
+//   var elements = array.length
+//   var sum = 0;
+//   for (var counter = 0; counter < array.length; counter ++){
+//     sum += array[counter];
+//   }
+//   (sum).toFixed;
+//   var mean = sum/elements;
+//   return mean;
+// }
+// console.log(mean([1,2,3]))
+
+// //Median
+// function median(array){
+//   var sum = 0;
+//   for (var counter = 0; counter < array.length; counter ++){
+//     sum += array[counter];
+//     (sum).toFixed;
+//     var median = sum/2;
+//     return median;
+//   }
+// }
+// console.log(median([1,2,3]))
+
+//FINAL REFACTORED VERSION
+
 //sum
+// As a user, I want to take a list of numbers and add all of the elements in that list 
+// together to produce a sum.
 function sum(array){
-  var sum = 0;
-  for (var counter = 0; counter < array.length; counter ++){
-    sum += array[counter];
-  }
-  return sum;
+  return array.reduce(function(previous, current) {return previous + current}, 0); 
 }
 
-console.log(sum([1,2,3,]))
+console.log(sum([1,2,3,4,5,6,7,8,9,10,11]))
 
 
 //Mean
+// As a user, I want to be able to find the arithmetic mean of a list of numbers, 
+// defined as the sum of all the numbers in thelist divided by the number of numbers
+// in the list.
+
 function mean(array){
-  var elements = array.length
-  var sum = 0;
-  for (var counter = 0; counter < array.length; counter ++){
-    sum += array[counter];
-  }
-  (sum).toFixed;
-  var mean = sum/elements;
-  return mean;
+  var elements = array.length;
+  var sum = array.reduce(function(previous, current) {return previous + current}, 0);
+
+  return sum/elements;
 }
-console.log(mean([1,2,3]))
+console.log(mean([1,2,3,4,5,6,7,8,9]))
 
 //Median
+// As a user, I want to be able to find the median number in a list of numbers, defined
+// as the numbers that separates the upper half of the list from the lower half, if the 
+// the list of numbers is ordered.
 function median(array){
-  var sum = 0;
-  for (var counter = 0; counter < array.length; counter ++){
-    sum += array[counter];
-    (sum).toFixed;
-    var median = sum/2;
-    return median;
+  array.sort(function(a, b) {return a - b})
+  var half = Math.floor(array.length / 2)
+  if (array.length % 2 !== 0) {
+    var median = array[half]
+  } else {
+    median = (array[half] + array[half - 1]) / 2.0
   }
+  return median
 }
-console.log(median([1,2,3]))
+console.log(median([1,2,3,4,5,6,7,8,9,10]))
+// Tests:  Do not alter code below this line.
+
+
+
+oddLengthArray  = [1, 2, 3, 4, 5, 5, 7]
+evenLengthArray = [4, 4, 5, 5, 6, 6, 6, 7]
+
+
+function assert(test, message, test_number) {
+  if (!test) {
+    console.log(test_number + "false");
+    throw "ERROR: " + message;
+  }
+  console.log(test_number + "true");
+  return true;
+} 
 
 //SUMMARY************************
 /*
