@@ -39,3 +39,18 @@
 	SELECT regions.region_name, states.state_name FROM states INNER JOIN regions ON states.region_id=regions.id ORDER BY region_id ASC;
 
 <img src="outfit_schema.png">
+
+REFLECTION:
+
+What are databases for?
+They help keep a ton of information in one place.  They're used to access that info using SQL (Structured Query Language)
+
+What is a one-to-many relationship?
+A one-to-many relationship is one in which a row in one table can have multiple matching rows in another table.  This relationship can be created using Primary Keys - Foreign Keys
+
+
+What is a primary key? What is a foreign key? How can you determine which is which?
+The way I saw it was a foreign key addresses the other table whereas the primary tends to just say "id" because it belongs to that table.
+
+
+How can you select information out of a SQL database? What are some general guidelines for that?
