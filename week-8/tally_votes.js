@@ -33,6 +33,12 @@ var votes = {
   "Zane": { president: "Louise", vicePresident: "Hermann", secretary: "Fred", treasurer: "Mary" }
 }
 
+for (var voter in votes) {
+  
+  console.log("votes." + voter + " = " + votes[voter]);
+
+}
+
 // Tally the votes in voteCount.
 var voteCount = {
   president: {},
