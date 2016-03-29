@@ -23,16 +23,98 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Write your code below.
 
+// var gradebook = {
+//   Joseph:{
+//     testScores:scores[0]
+    
+//   },
+//   Susan:{
+//     testScores:scores[1]
+    
+//   },
+//   William:{
+//     testScores:scores[2]
+    
+//   },
+//   Elizabeth:{
+//     testScores:scores[3]
+    
+//   },
+//   addScore: function(name, score){
+  
+//      gradebook[name]['testScores'].push(score);
+//   },
+//   getAverage: function(name){
+//     return average(gradebook[name]['testScores']);
+  
+//   }
+  
+
+// }
+  
+// function average(array){
+//   var sum = 0;
+//   var avg = 0;
+//   for (var i =0; i < array.length; i++){
+//     sum += array[i];
+//     avg = sum / array.length;
+//   }
+//   return avg; 
+// };
 
 
+  
 
+// Release 7: Modify your getAverage Function
+// Modify getAverage so that it accepts a name as a String (e.g., "Joseph")
+// and returns that student's average score. 
+//Use the average function you just created.
 
-
+// assert(
+//   (gradebook.getAverage("Joseph") === 80),
+//   "gradebook's getAverage should return 80 if passed 'Joseph'.",
+//   "9. "
+// )
 
 
 // __________________________________________
 // Refactored Solution
 
+var gradebook = {
+  Joseph:{
+    testScores:scores[0]
+    
+  },
+  Susan:{
+    testScores:scores[1]
+    
+  },
+  William:{
+    testScores:scores[2]
+    
+  },
+  Elizabeth:{
+    testScores:scores[3]
+    
+  },
+  addScore: function(name, score){
+  
+     gradebook[name]['testScores'].push(score);
+  },
+  getAverage: function(name){
+    return average(gradebook[name]['testScores']);
+  
+  }
+  
+
+}
+  
+function average(array){
+  var elements = array.length;
+  var sum = array.reduce(function(previous, current) {return previous + current});
+
+  return sum/elements;
+}
 
 
 
@@ -43,8 +125,22 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Reflect
 
+// What did you learn about adding functions to objects?
+// Just follow correct notation, but it's pretty straightforward.
+// A basic function looks like:
+// function(input){
+//   What you want your function to do
+// }
 
+// How did you iterate over nested arrays in JavaScript?
+// scores[index_num]
+// Which is essentially, scores is the variable but also the name of the first array, index_num we use to acess values from the array inside
 
+// Were there any new methods you were able to incorporate? If so, what were they and how did they work?
+// .reduce in our refactor.
+// array on the left, array.reduce returns back once number.  You set instructions on how to return within parenthesis.
+// so in our case, we had a function with inputs previous and current, we then tell it to give us the sum of those inputs.
+// We put that in a variable so we can then just keep working with variables.
 
 
 
@@ -121,3 +217,4 @@ assert(
   "gradebook's getAverage should return 80 if passed 'Joseph'.",
   "9. "
 )
+
