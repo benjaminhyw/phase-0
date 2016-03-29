@@ -48,9 +48,15 @@ They help keep a ton of information in one place.  They're used to access that i
 What is a one-to-many relationship?
 A one-to-many relationship is one in which a row in one table can have multiple matching rows in another table.  This relationship can be created using Primary Keys - Foreign Keys
 
-
 What is a primary key? What is a foreign key? How can you determine which is which?
-The way I saw it was a foreign key addresses the other table whereas the primary tends to just say "id" because it belongs to that table.
+A primary key uniquely identifies a record in the table, a foreign key is a field in the table that is a primary key in another table.  Basically, they are what link the two together when joining information.  The way I understood it, it's easy to determine which is primary and which is foreign depending on the name given to the id.  For example, the states table had region_id whereas the region table just had id.  In this case, the region table holds the primary key while the states table holds the foreign key.
 
 
 How can you select information out of a SQL database? What are some general guidelines for that?
+Your notation has to be super specific as to what you're trying to access.  General guidelines: main key words have to be capitalized, always end with a semicolon, make sure to order your commands correctly.
+
+Generally looks like:
+
+SELECT row_name FROM table_name;
+The more specific you wanna be, the more precise your notation will look like.
+
