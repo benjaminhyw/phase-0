@@ -140,7 +140,38 @@ function assert(test, message, test_number) {
   }
   console.log(test_number + "true");
   return true;
-} 
+}
+
+//REFACTORED:*********************
+//SUM*******
+function sum(array){
+  return array.reduce(function(previous, current) {return previous + current}, 0); 
+}
+
+console.log(sum([1,2,3,4,5,6,7,8,9,10,11]))
+
+
+//MEAN
+function mean(array){
+  var elements = array.length;
+  var sum = array.reduce(function(previous, current) {return previous + current}, 0);
+
+  return sum/elements;
+}
+console.log(mean([1,2,3,4,5,6,7,8,9]))
+
+//MEDIAN
+function median(array){
+  array.sort(function(a, b) {return a - b})
+  var half = Math.floor(array.length / 2)
+  if (array.length % 2 !== 0) {
+    var median = array[half]
+  } else {
+    median = (array[half] + array[half - 1]) / 2.0
+  }
+  return median
+}
+console.log(median([1,2,3,4,5,6,7,8,9,10]))
 
 //SUMMARY************************
 /*

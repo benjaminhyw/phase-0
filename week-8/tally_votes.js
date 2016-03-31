@@ -33,11 +33,6 @@ var votes = {
   "Zane": { president: "Louise", vicePresident: "Hermann", secretary: "Fred", treasurer: "Mary" }
 }
 
-for (var voter in votes) {
-  
-  console.log("votes." + voter + " = " + votes[voter]);
-
-}
 
 // Tally the votes in voteCount.
 var voteCount = {
@@ -74,7 +69,46 @@ var officers = {
 // __________________________________________
 // Initial Solution
 
+for (var students in votes) {
+   if (votes.hasOwnProperty(students)) {
+      var preference = votes[students];
+      for (var position in preference) {
+         if (preference.hasOwnProperty(position)) {
+           var name = preference[position]
+         voteCount[position][name] = 0;
+           
+       
+         }
+      }
+   }
+}
 
+for (var students in votes) {
+   if (votes.hasOwnProperty(students)) {
+      var preference = votes[students];
+      for (var position in preference) {
+         if (preference.hasOwnProperty(position)) {
+           var name = preference[position]
+         voteCount[position][name] ++;
+           
+       
+         }
+      }
+   }
+}
+
+for (var obj in voteCount){
+  var maxVote = 0;
+  var po = voteCount[obj];
+  for(var name in po){
+    var vote = po[name];
+    if (vote > maxVote){
+      maxVote = vote;
+      officers[obj] = name;
+    }
+  }
+  
+}
 
 
 
@@ -83,13 +117,23 @@ var officers = {
 // __________________________________________
 // Refactored Solution
 
-
+//will come back to refactor
 
 
 
 
 // __________________________________________
 // Reflection
+What did you learn about iterating over nested objects in JavaScript?
+It was hard to understand and still a little iffy but my understanding is we basically 
+have to create for .. in loop statements so that we can create new appropriate variables to access 
+whatever information we're trying to access.
+
+Were you able to find useful methods to help you with this?
+Not initially, will come back to refactor.
+
+What concepts were solidified in the process of working through this challenge?
+Just practice using the for .. in loop statements and creating variable objects but still need more practice to fuly get it down.
 
 
 
