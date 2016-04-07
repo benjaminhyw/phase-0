@@ -118,3 +118,17 @@ puts spoon.clean_silverware #=> this should be false
 
 
 # Reflection
+
+# What concepts did you review in this challenge?
+# 	Method syntax, class structures, class inheritance, instance variables, and code indentation.
+
+# What is still confusing to you about Ruby?
+# 	Nothing from this challenge.. we did have a hard time realizing one of the errors we were receiving
+# 	because it had nothing to check lol.  Once we realized that tho, we added the necessary code for it
+# 	to work and we were well on our way.
+
+# What are you going to study to get more prepared for Phase 1?
+# 	Everything I can, to be honest.  This exercise was editing a code so it worked, so it wasn't all that tough.
+# 	It's different editing and creating tho, much different comfort zones.  Low key afraid of phase-1 lol.
+
+
