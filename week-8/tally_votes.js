@@ -69,47 +69,41 @@ var officers = {
 // __________________________________________
 // Initial Solution
 
-for (var students in votes) {
-   if (votes.hasOwnProperty(students)) {
-      var preference = votes[students];
-      for (var position in preference) {
-         if (preference.hasOwnProperty(position)) {
-           var name = preference[position]
-         voteCount[position][name] = 0;
-           
-       
-         }
-      }
-   }
+for (var students in votes){
+  if(!votes.hasOwnProperty(students)) continue;
+  var student = votes[students]
+  for(var po in student ){
+   if(!student.hasOwnProperty(po)) continue;
+  var name = student[po]
+  voteCount[po][name] = 0;
+  } 
+
 }
 
-for (var students in votes) {
-   if (votes.hasOwnProperty(students)) {
-      var preference = votes[students];
-      for (var position in preference) {
-         if (preference.hasOwnProperty(position)) {
-           var name = preference[position]
-         voteCount[position][name] ++;
-           
-       
-         }
-      }
-   }
+for (var students in votes){
+  if(!votes.hasOwnProperty(students)) continue;
+  var student = votes[students]
+  for(var po in student ){
+   if(!student.hasOwnProperty(po)) continue;
+  var name = student[po]
+  voteCount[po][name]++;
+  } 
+
 }
 
-for (var obj in voteCount){
+for (var po in voteCount){
+  if(!voteCount.hasOwnProperty(po)) continue;
   var maxVote = 0;
-  var po = voteCount[obj];
-  for(var name in po){
-    var vote = po[name];
-    if (vote > maxVote){
-      maxVote = vote;
-      officers[obj] = name;
-    }
+  var obj = voteCount[po]
+  for (var name in obj){
+    if(!obj.hasOwnProperty(name)) continue;
+    vote = obj[name];
+    if(vote > maxVote){
+    maxVote = vote;
+    officers[po] = name;
+   }
   }
-  
 }
-
 
 
 
@@ -117,23 +111,51 @@ for (var obj in voteCount){
 // __________________________________________
 // Refactored Solution
 
-//will come back to refactor
+for (var students in votes){
+  var student = votes[students]
+  for(var po in student ){
+  var name = student[po]
+  voteCount[po][name] = 0;
+  } 
+
+}
+
+for (var students in votes){
+  var student = votes[students]
+  for(var po in student ){
+  var name = student[po];
+  voteCount[po][name]++;
+  } 
+
+}
+
+for (var po in voteCount){
+  var maxVote = 0;
+  var obj = voteCount[po];
+  for (var name in obj){
+    vote = obj[name];
+    if(vote > maxVote){
+    maxVote = vote;
+    officers[po] = name;
+   }
+  }
+}
 
 
 
 
 // __________________________________________
 // Reflection
-What did you learn about iterating over nested objects in JavaScript?
-It was hard to understand and still a little iffy but my understanding is we basically 
-have to create for .. in loop statements so that we can create new appropriate variables to access 
-whatever information we're trying to access.
+// What did you learn about iterating over nested objects in JavaScript?
+// It was hard to understand and still a little iffy but my understanding is we basically 
+// have to create for .. in loop statements so that we can create new appropriate variables to access 
+// whatever information we're trying to access.
 
-Were you able to find useful methods to help you with this?
-Not initially, will come back to refactor.
+// Were you able to find useful methods to help you with this?
+// Not initially, will come back to refactor.
 
-What concepts were solidified in the process of working through this challenge?
-Just practice using the for .. in loop statements and creating variable objects but still need more practice to fuly get it down.
+// What concepts were solidified in the process of working through this challenge?
+// Just practice using the for .. in loop statements and creating variable objects but still need more practice to fuly get it down.
 
 
 
