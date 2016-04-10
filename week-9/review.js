@@ -60,6 +60,16 @@ function findMode(collection){
 	return mode;
 }
 
+//Driver Test
+var arrays = [[1, 2, 3, 4, 5], 
+			[2,3,4,2,3,4,4,5,4],
+			[5,6,8,3,5,7,3,5,7,4,3,2],
+			 [-1,-2,-1,-5,0,1,2,3,4,5]];						  
+
+for (var array of arrays) {
+	console.log(findMode(array));
+}
+
 
 //REFACTOR
 /*
